@@ -1,11 +1,56 @@
-<div align="center">
+# NextGen Market - AI-Powered eCommerce Platform
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+NextGen Market is a premium, full-stack eCommerce solution designed for the future. It features high-end UI/UX, AI-driven recommendations, voice navigation, and enterprise-level analytics.
 
-  <h1>Built with AI Studio</h2>
+## ✨ Features
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **Storefront**: High-performance browsing with premium Apple/Tesla design patterns.
+- **AI Chatbot**: Intelligent assistant powered by Gemini for recommendations and FAQs.
+- **Voice Navigation**: Search, navigate, and manage your cart using voice commands.
+- **Admin Dashboard**: Real-time sales analytics, inventory control, and user management.
+- **Enterprise Tech**: Next-gen stack with Prisma ORM, JWT Auth, and Express.
+- **Multilingual**: Supports English, Français, and Kinyarwanda.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## 🚀 Getting Started
 
-</div>
+### 1. Prerequisites
+- Node.js 18+
+- MySQL (Optional, SQLite used by default for immediate use)
+- XAMPP/phpMyAdmin (For importing the provided MySQL script)
+
+### 2. Installation
+```bash
+npm install
+```
+
+### 3. Database Setup
+The app comes pre-configured with SQLite for instant usability.
+To use MySQL:
+1. Import `database/schema.sql` into phpMyAdmin.
+2. Update `.env` with your MySQL connection string.
+3. Run `npm run prisma generate`.
+
+### 4. Development
+```bash
+npm run dev
+```
+
+### 5. Production Build
+```bash
+npm run build
+npm start
+```
+
+## 🐳 Docker Setup
+```bash
+docker-compose up --build
+```
+
+## 🛠 Tech Stack
+- **Frontend**: React, Tailwind CSS, Framer Motion, Zustand, ShadCN UI.
+- **Backend**: Node.js, Express, Prisma ORM.
+- **AI**: Google Gemini API.
+- **Voice**: Web Speech API.
+
+---
+Designed with ❤️ by NextGen Engineers.

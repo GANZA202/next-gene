@@ -1,0 +1,37 @@
+// This is the IR blueprint for the database
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Standard user account",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "password": { "type": "string" },
+        "name": { "type": "string" },
+        "role": { "type": "string", "enum": ["USER", "ADMIN", "VENDOR"] },
+        "avatar": { "type": "string" },
+        "isVerified": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["email", "password", "name"]
+    },
+    "Product": {
+      "title": "Product",
+      "description": "eCommerce product",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "price": { "type": "number" },
+        "stock": { "type": "integer" },
+        "categoryId": { "type": "string" },
+        "brand": { "type": "string" },
+        "rating": { "type": "number" },
+        "images": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

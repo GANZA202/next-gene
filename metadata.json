@@ -1,0 +1,6 @@
+{
+  "name": "NextGen Market",
+  "description": "A premium AI-powered eCommerce platform with voice navigation, smart recommendations, and advanced analytics.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"],
+  "majorCapabilities": []
+}
